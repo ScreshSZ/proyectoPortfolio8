@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", "san-serif";
+}
+
+
+
+header{
+    width: 100%;
+    height: 80vh;
+    background: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    color: #e34343;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+nav{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+nav .btnMobile{
+    display: none;
+}
+
+nav .links{
+    display: flex;
+    align-items: center;
+}
+
+.links li{
+    margin: 0 20px;
+}
+
+.links li a{
+    color: #fff;
+}
+
+.containerInfo{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.containerInfo h1{
+    color: #e34343;
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.containerInfo h3{
+    color: #e34343;
+    margin: 30px 0;
+    font-size: 32px;
+}
+
+.containerInfo p{
+    color: #fff;
+    margin: 20px 0;
+}
+
+.containerInfo button{
+    background-color: #e34343;
+    color: #fff;
+    border: none;
+    padding: 12px 38px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact h3{
+    font-size: 20px;
+}
+
+.contact h4{
+    color: #fff;
+}
+
+/***********************************************/
+
+main{
+    
+}
+
+.section1{
+    display: flex;
+    background-color: #1c1a1a;
+    height: 800px;
+    box-shadow: 0 0 80px #000;
+}
+
+.section1 img{
+    width: 900px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.section1 .containerInfo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.containerInfo1 h2{
+    color: #fff;
+    font-size: 55px;
+}
+
+.containerInfo1 span{
+    color: #e34343;
+    margin: 15px 0;
+}
+
+.containerInfo1 p{
+    color: #fff;
+    margin: 15px 0;
+}
+
+.containerInfo1 button{
+    padding: 12px 38px;
+    background-color: #e34343;
+    color: #fff;
+    border: none;
+}
+
+.section2{
+    text-align: center;
+    background-color: #171717;
+    color: #fff;
+    padding: 80px 0;
+    box-shadow: 0 0 40px #000;
+}
+
+.section2 h2{
+    font-size: 55px;
+}
+
+.section2 p{
+    padding: 80px 555px;
+}
+
+.section2 .cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0 20px;
+    
+}
+
+.section2 .cards div{
+    background-color: #222;
+    border-radius: 15px;
+    height: 250px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 35px;
+}
+
+.section2 .cards i{
+    padding: 15px;
+    font-size: 20px;
+    color: #e34343;
+    border-radius: 90%;
+}
+
+.section2 .cards p{
+    padding: 0 40px;
+    color: #bbb;
+}
+
+.section2 .cards a{
+    color: #e34343;
+}
+
+.section2 button{
+    background-color: #e34343;
+    color: #fff;
+    border: none;
+    padding: 12px 36px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #fff;
+    color: #000;
+    padding: 8px 16px;
+}
+
+@media (max-width:1314px){
+    .section1 img{
+        width: 500px;
+    }
+
+    .section2 p{
+        padding: 20px 0;
+    }
+}
+
+@media (max-width:914px){
+    nav .btnMobile{
+        display: initial;
+        background: none;
+        color: #fff;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    nav .links{
+        position: absolute;
+        background-color: #e34343;
+        display: flex;
+        flex-direction: column;
+        top: 70px;
+        width: 100%;
+        right: 1px;
+       display: none;
+    }
+
+    nav .links li{
+         padding: 14px 0;
+    }
+
+    .section1{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .section1 .containerInfo1{
+        padding: 40px;
+    }
+
+    .section1 img{
+        width: 100%;
+    }
+
+    .section2{
+        padding: 40px;
+    }
+
+    .section2 .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:550px){
+
+    .containerInfo h1{
+        font-size: 46px;
+    }
+
+    .section1 .containerInfo1{
+        padding: 10px;
+    }
+
+    .section2{
+        padding: 10px;
+    }
+
+    header{
+        height: 100%;
+        padding-bottom: 10px;
+    }
+
+    .section1 h2{
+        font-size: 28px;
+    }
+
+    .section2 h2{
+        font-size: 28px;
+    }
+
+
+    .section2 .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+nav .show{
+    display: initial;
+}
